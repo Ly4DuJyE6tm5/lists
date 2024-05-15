@@ -88,6 +88,10 @@ download_file(
 )
 download_file("https://adaway.org/hosts.txt", "adaway.txt")
 download_file("https://v.firebog.net/hosts/AdguardDNS.txt", "adguarddns.txt")
+download_file(
+    "https://raw.githubusercontent.com/Ly4DuJyE6tm5/block.txt/master/blokada.txt",
+    "blokada.txt",
+)
 
 
 # Merge, sort, and deduplicate (filtering during merge)
