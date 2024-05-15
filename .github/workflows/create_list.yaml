@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name 'GitHub Actions'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add test_results.txt
+          git add merged_blocklist.txt
         if: success()
 
       - name: Commit changes (requires push access)
