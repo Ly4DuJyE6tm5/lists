@@ -23,6 +23,9 @@ jobs:
       - name: Run the test script
         run: |
           python lists.py
+     
+      - name: Get directory
+        run: ls
 
       - name: Upload test results
         uses: actions/upload-artifact@v3
