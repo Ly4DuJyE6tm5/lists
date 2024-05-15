@@ -1,8 +1,10 @@
+---
 name: Run test script and commit results
 
 on:
   push:
-
+  schedule:
+    - cron: "* */8 * * *"
 
 jobs:
   test:
@@ -23,7 +25,7 @@ jobs:
       - name: Run the test script
         run: |
           python lists.py
-     
+
       - name: Get directory
         run: ls
 
@@ -32,8 +34,6 @@ jobs:
         with:
           name: merged_blocklist
           path: merged_blocklist.txt
-
-
 
       - name: Configure Git (requires push access)
         run: |
