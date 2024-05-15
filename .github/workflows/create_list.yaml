@@ -33,11 +33,7 @@ jobs:
           name: merged_blocklist
           path: merged_blocklist.txt
 
-      - name: Commit test results (requires push access)
-        uses: actions/checkout@v4
-        if: success()
-        with:
-          fetch-depth: 0
+
 
       - name: Configure Git (requires push access)
         run: |
